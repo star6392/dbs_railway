@@ -12,16 +12,16 @@ CREATE TABLE train_list (
   Fri varchar(2) NOT NULL,
   Sat varchar(2) NOT NULL,
   Sun varchar(2) NOT NULL,
-  1A int(11) NOT NULL,
-  2A int(11) NOT NULL,
-  3A int(11) NOT NULL,
-  SL int(11) NOT NULL,
+  1A varchar(11) NOT NULL,
+  2A varchar(11) NOT NULL,
+  3A varchar(11) NOT NULL,
+  SL varchar(11) NOT NULL
 
 )
 
 
 
-INSERT INTO train_list (`Number`, `Name`, `Origin`, `Destination`, `Arrival`, `Departure`, `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`, `Sun`, `1A`, `2A`, `3A`, `SL`) VALUES
+INSERT INTO train_list ('Number', 'Name', 'Origin', 'Destination', 'Arrival', 'Departure', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri, 'Sat', 'Sun', '1A', '2A', '3A', 'SL') VALUES
 (12009, 'SHATABDI EXP', 'BCT', 'ADI', '22:15', '06:25', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 2500, 1000, 500, 250),
 (12931, 'ADI DOUBLE DECK', 'BCT', 'ADI', 'First st', '14:20', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 2500, 1000, 500, 250),
 (12932, 'BCT DOUBLEDECKE', 'ADI', 'BCT', '13:00', 'Last st', 'Y', 'Y', 'Y', 'Y', 'Y', 'Y', 'N', 2500, 1000, 500, 250),
